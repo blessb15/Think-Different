@@ -61,6 +61,18 @@
     }
 }
 
+@keyframes logoslide {
+    from {
+      margin-top: 50px;
+    }
+
+    to {
+      margin-top: 45vh !important;
+    }
+}
+
+
+
 
 /*NAV*/
 
@@ -104,6 +116,7 @@
 }
 
 .nav-bar-img-center {
+  animation: logoslide 0.7s 0s 1;
   margin-top: 45vh !important;
 }
 
