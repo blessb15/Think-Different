@@ -1,6 +1,65 @@
 /*FONTS*/
 
 
+/*ANIMATIONS*/
+
+@keyframes navright {
+    from {
+      left: 50%;
+      margin-left: -120px;
+      width: 240px;
+    }
+
+    to {
+      left: 100%;
+      margin-left: -150px;
+      width: 150px;
+    }
+}
+
+@keyframes navleft {
+    from {
+      left: 50%;
+      margin-left: -120px;
+      width: 240px;
+    }
+
+    to {
+      margin-left: 0px !important;
+      left: 0% !important;
+      width: 150px;
+    }
+}
+
+@keyframes pageexpandleft {
+    from {
+      margin-top: 7%;
+      margin-left: 10%;
+      width: 45%;
+      height: 80%;
+    }
+
+    to {
+      margin: 0px !important;
+      width: 100% !important;
+      height: 100% !important;
+    }
+}
+
+@keyframes pageexpandright {
+    from {
+      margin-top: 7%;
+      margin-left: 45%;
+      width: 45%;
+      height: 80%;
+    }
+
+    to {
+      margin: 0px !important;
+      width: 100% !important;
+      height: 100% !important;
+    }
+}
 
 
 /*NAV*/
@@ -26,12 +85,14 @@
 }
 
 .nav-right {
+  animation: navright .7s 0s 1;
   left: 100%;
   margin-left: -150px;
   width: 150px;
 }
 
 .nav-left {
+  animation: navleft .7s 0s 1;
   margin-left: 0px !important;
   left: 0% !important;
   width: 150px;
@@ -73,7 +134,7 @@
 
 .base-expand {
   position: absolute !important;
-  width: 90% !important;
+  width: 100% !important;
   height: 100% !important;
 }
 
@@ -84,7 +145,17 @@
 }
 
 
-.page-expand {
+.page-expand-left {
+  animation: pageexpandleft 0.7s 0s 1;
+  margin: 0px !important;
+  z-index: 4 !important;
+  width: 100% !important;
+  height: 100% !important;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0) !important;
+}
+
+.page-expand-right {
+  animation: pageexpandright 0.7s 0s 1;
   margin: 0px !important;
   z-index: 4 !important;
   width: 100% !important;
