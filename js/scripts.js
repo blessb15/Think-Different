@@ -42,4 +42,5 @@ $(document).ready(function(){
       $('.nav-bar-img').addClass('nav-bar-img-center');
     }
   });
+
 });
