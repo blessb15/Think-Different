@@ -43,4 +43,16 @@ $(document).ready(function(){
     }
   });
 
+  $('.page-logo').click(function() {
+    $('.nav-bar').removeClass('nav-right');
+    $('.nav-bar').removeClass('nav-left');
+    $('#page-1').removeClass('page-expand-left');
+    $('#page-2').removeClass('page-expand-left');
+    $('#page-3').removeClass('page-expand-right');
+    $('#page-4').removeClass('page-expand-right');
+    $('.base').removeClass('base-expand');
+    $('.nav-bar-img').removeClass('nav-bar-img-center');
+    $('.nav-page-link').show();
+  })
+
 });

@@ -1,6 +1,27 @@
 /*FONTS*/
 
 
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 400px) {
+  .nav-bar {
+    width: 140px !important;
+    margin-left: -70px !important;
+  }
+
+  .nav-page-link p {
+    font-size: 20px !important;
+  }
+
+  .nav-left {
+    display: none;
+  }
+
+  .nav-right {
+    display: none;
+  }
+}
+
 /*ANIMATIONS*/
 
 @keyframes navright {
@@ -183,7 +204,7 @@
   background-repeat: no-repeat;
   position: relative;
   z-index: 2;
-  margin-top: 7%;
+  margin-top: 10vh;
   margin-left: 10%;
   width: 45%;
   height: 80%;
@@ -211,7 +232,7 @@
   background-repeat: no-repeat;
   position: relative;
   z-index: 1;
-  margin-top: 12.5%;
+  margin-top: 20vh;
   margin-left: 5%;
   width: 45%;
   height: 60%;
@@ -239,7 +260,7 @@
   background-repeat: no-repeat;
   position: relative;
   z-index: 2;
-  margin-top: 7%;
+  margin-top: 10vh;
   margin-left: 45%;
   width: 45%;
   height: 80%;
@@ -268,7 +289,7 @@
   background-repeat: no-repeat;
   position: relative;
   z-index: 1;
-  margin-top: 12.5%;
+  margin-top: 20vh;
   margin-left: 50%;
   width: 45%;
   height: 60%;
